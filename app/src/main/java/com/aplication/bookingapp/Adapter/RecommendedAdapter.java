@@ -1,6 +1,7 @@
 package com.aplication.bookingapp.Adapter;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -16,9 +17,16 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
     ArrayList<PropertyDomain> items;
     Context context;
     RecommendedViewholderBinding binding;
+
+    public RecommendedAdapter(ArrayList<PropertyDomain> items) {
+        this.items = items;
+    }
+
     @NonNull
     @Override
     public RecommendedAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        binding = RecommendedViewholderBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+        context = parent.getContext();
         return null;
     }
 
