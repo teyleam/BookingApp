@@ -43,7 +43,16 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
         int drawableResourceId = holder.itemView.getResources()
                 .getIdentifier(items.get(position).getPicPath(),"drawable",holder.itemView.getContext().getPackageName());
 
-        Glide
+        Glide.with(context)
+                .load(drawableResourceId)
+                .into(binding.pic);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
