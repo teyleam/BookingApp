@@ -28,7 +28,6 @@
         android:layout_margin="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintEnd_toStartOf="@+id/titleTxt"
         app:layout_constraintTop_toTopOf="@+id/pic"
         app:srcCompat="@drawable/favorite" />
