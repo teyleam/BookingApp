@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.aplication.bookingapp.Domain.PropertyDomain;
 import com.aplication.bookingapp.databinding.RecommendedViewholderBinding;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -33,7 +34,16 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull RecommendedAdapter.Viewholder holder, int position) {
+        binding.titleTxt.setText(items.get(position).getTitle());
+        binding.priceTxt.setText("$"+items.get(position).getPrice());
+        binding.typeTxt.setText(items.get(position).getType());
+        binding.addressTxt.setText(items.get(position).getAddress());
+        binding.scoreTxt.setText(""+items.get(position).getScore());
 
+        int drawableResourceId = holder.itemView.getResources()
+                .getIdentifier(items.get(position).getPicPath(),"drawable",holder.itemView.getContext().getPackageName());
+
+        Glide
     }
 
     @Override
