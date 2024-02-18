@@ -26,7 +26,7 @@ public class NearbyAdapter extends RecyclerView.Adapter<NearbyAdapter.Viewholder
     @NonNull
     @Override
     public NearbyAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding = RecommendedViewholderBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+        binding = NearbyViewholderBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
         context = parent.getContext();
         return new Viewholder(binding);
     }
@@ -42,7 +42,7 @@ public class NearbyAdapter extends RecyclerView.Adapter<NearbyAdapter.Viewholder
     }
 
     public class Viewholder extends RecyclerView.ViewHolder {
-        public Viewholder(RecommendedViewholderBinding binding) {
+        public Viewholder(NearbyViewholderBinding binding) {
             super(binding.getRoot());
         }
     }
