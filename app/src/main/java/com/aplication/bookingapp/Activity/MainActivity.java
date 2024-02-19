@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         adapterRecommended = new RecommendedAdapter(items);
         binding.recommendedView.setAdapter(adapterRecommended);
 
-        binding.nearbyView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        binding.nearbyView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         adapterNearby = new NearbyAdapter(items);
         binding.nearbyView.setAdapter(adapterNearby);
     }
