@@ -1,11 +1,14 @@
 package com.aplication.bookingapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
+import com.aplication.bookingapp.Adapter.NearbyAdapter;
+import com.aplication.bookingapp.Adapter.RecommendedAdapter;
 import com.aplication.bookingapp.Domain.PropertyDomain;
 import com.aplication.bookingapp.R;
 import com.aplication.bookingapp.databinding.ActivityMainBinding;
@@ -33,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 2,3,true,4.7,"This 2 bed/1 bath home boasts an enormous,open-living plan, accented by striking architectural features and high-end finishes"));
         items.add(new PropertyDomain("Villa","Royal Villa", "HoChiMinh VN","h_3",3500,
                 2,1,true,4.9,"This 2 bed/1 bath home boasts an enormous,open-living plan, accented by striking architectural features and high-end finishes"));
+
+        binding.recommendedView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        adapterRecommended = new RecommendedAdapter(items);
+        binding.recommendedView.setAdapter(adapterRecommended);
+
+        binding.nearbyView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        adapterNearby = new NearbyAdapter(items);
+        binding.nearbyView.setAdapter(adapterNearby);
     }
 
     private void initLocation() {
