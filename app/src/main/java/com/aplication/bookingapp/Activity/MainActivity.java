@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         initLocation();
+        initRecyclerView();
+    }
+
+    private void initRecyclerView() {
     }
 
     private void initLocation() {
