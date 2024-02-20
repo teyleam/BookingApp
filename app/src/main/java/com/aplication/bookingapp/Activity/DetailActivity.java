@@ -3,6 +3,7 @@ package com.aplication.bookingapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.aplication.bookingapp.Domain.PropertyDomain;
 import com.aplication.bookingapp.R;
@@ -22,6 +23,13 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void setVariable() {
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        int drawableResource = getResources().getIdentifier(object.getPicPath(),"drawable", DetailActivity.this.getPackageName());
     }
 
     private void getBundles() {
