@@ -115,7 +115,8 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -134,7 +135,7 @@
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="2 Bed" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -148,13 +149,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@tools:sample/avatars"
-                        app:srcCompat="@drawable/bed" />
+                        app:srcCompat="@drawable/bath" />
 
                     <TextView
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="1 Bath" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -168,13 +169,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@tools:sample/avatars"
-                        app:srcCompat="@drawable/bed" />
+                        app:srcCompat="@drawable/wifi" />
 
                     <TextView
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Wifi" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
