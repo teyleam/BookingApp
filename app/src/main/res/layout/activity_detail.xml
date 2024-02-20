@@ -133,6 +133,7 @@
                         android:id="@+id/bedTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:text="2 Bed" />
                 </LinearLayout>
 
@@ -152,6 +153,7 @@
                         android:id="@+id/bathTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:text="1 Bath" />
                 </LinearLayout>
 
@@ -171,6 +173,7 @@
                         android:id="@+id/wifiTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:text="Wifi" />
                 </LinearLayout>
 
