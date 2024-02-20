@@ -1,6 +1,7 @@
 package com.aplication.bookingapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.aplication.bookingapp.Activity.DetailActivity;
 import com.aplication.bookingapp.Domain.PropertyDomain;
 import com.aplication.bookingapp.databinding.NearbyViewholderBinding;
 import com.aplication.bookingapp.databinding.RecommendedViewholderBinding;
@@ -51,7 +53,9 @@ public class NearbyAdapter extends RecyclerView.Adapter<NearbyAdapter.Viewholder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(context, DetailActivity.class);
+                intent.putExtra("object", items.get(position));
+                context.startActivity(intent);
             }
         });
     }
