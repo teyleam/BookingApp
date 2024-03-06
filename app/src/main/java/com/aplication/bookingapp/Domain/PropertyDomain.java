@@ -14,7 +14,7 @@ public class PropertyDomain implements Serializable {
     private boolean wifi;
     private double score;
 
-    public PropertyDomain(String type,String title,  String address, String picPath, int price, int bed, int bath, boolean wifi, double score, String description) {
+    public PropertyDomain(String type, String title,  String address, String picPath, int price, int bed, int bath, boolean wifi, double score, String description) {
         this.title = title;
         this.type = type;
         this.address = address;

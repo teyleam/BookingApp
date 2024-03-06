@@ -61,11 +61,13 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
 
     @Override
     public int getItemCount() {
+
         return items.size();
     }
 
     public class Viewholder extends RecyclerView.ViewHolder {
         public Viewholder(RecommendedViewholderBinding binding) {
+
             super(binding.getRoot());
         }
     }
